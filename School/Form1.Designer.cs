@@ -43,7 +43,6 @@
             this.label_password2 = new System.Windows.Forms.Label();
             this.textBox_passwordRegistration = new System.Windows.Forms.TextBox();
             this.textBox_reenterPasswordRegistration = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.button_register = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -208,15 +207,6 @@
             this.textBox_reenterPasswordRegistration.Size = new System.Drawing.Size(128, 28);
             this.textBox_reenterPasswordRegistration.TabIndex = 14;
             this.textBox_reenterPasswordRegistration.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // button_register
             // 
@@ -404,7 +394,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button_register);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox_reenterPasswordRegistration);
             this.Controls.Add(this.textBox_passwordRegistration);
             this.Controls.Add(this.label_password2);
@@ -447,7 +436,6 @@
         private System.Windows.Forms.Label label_password2;
         private System.Windows.Forms.TextBox textBox_passwordRegistration;
         private System.Windows.Forms.TextBox textBox_reenterPasswordRegistration;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button_register;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;

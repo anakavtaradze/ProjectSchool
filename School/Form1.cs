@@ -20,19 +20,22 @@ namespace School
             InitializeComponent();
         }
 
+        private const bool F = false;
         int lastID = 0;
         XmlDocument xmlauth = new XmlDocument();
+        XmlDocument studentData = new XmlDocument();
+        XmlDocument teacherData = new XmlDocument();
         List<User> registeredUsers = new List<User>();
 
         public void loadRegisteredUsers()
         {
             xmlauth.Load("../../../XMLFile1.xml");
-            //studentData.Load("../../../StudentList.xml");
-            //teacherData.Load("../../../TeacherList.xml");
+            studentData.Load("../../../StudentList.xml");
+            teacherData.Load("../../../TeacherList.xml");
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            xmlauth.Load("../../../XMLFile1.xml");
+            xmlauth.Load("../../../UserList.xml");
 
             foreach (XmlNode user in xmlauth.SelectSingleNode("Users").ChildNodes)
             {
@@ -94,6 +97,9 @@ namespace School
 
         private void button1_Click(object sender, EventArgs e)
         {
+            label9.Visible = F;
+            label10.Visible = F;
+            label11.Visible = F;
             bool usernameExists = false;
             for(int i=0; i<registeredUsers.Count; i++)
             {
